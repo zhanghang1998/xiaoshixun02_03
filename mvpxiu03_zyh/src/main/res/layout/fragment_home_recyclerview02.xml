@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_10"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_10"
+    android:layout_margin="@dimen/dp_10"
+    android:background="@drawable/homefrag_recyclerview_item">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/homeFrag_SDV_image"
+            android:layout_width="@dimen/dp_85"
+            android:layout_height="@dimen/dp_98"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:id="@+id/homeFrag_text"
+            android:layout_marginRight="@dimen/dp_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:textColor="#666666"
+            android:text="123312312"
+            />
+        <TextView
+            android:id="@+id/homeFrag_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#ff0000"
+            android:text="123312312"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

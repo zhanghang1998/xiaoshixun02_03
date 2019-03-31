@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_2"
+    tools:context=".myfragactivity.MyMassageActivity">
+
+    <!--android:textStyle="bold"  TextView 字体加粗-->
+    <TextView
+        android:layout_marginTop="40dp"
+        android:textSize="24sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的资料" />
+
+    <!-- 我的头像 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:background="@drawable/homefrag_recyclerview_item"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_weight="1"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:text="我的头像" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imageView_myMessage_head"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30" />
+
+        </LinearLayout>
+
+        <View
+            android:background="#666666"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"/>
+
+        <!-- 我的姓名 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_14"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:text="我的昵称" />
+
+            <TextView
+                android:id="@+id/textView_myMessage_name"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#666666"
+                android:text="Wy_xsl_"
+                android:layout_height="@dimen/dp_30" />
+
+        </LinearLayout>
+
+        <View
+            android:background="#666666"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"/>
+
+        <!-- 我的姓名 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:textColor="#666666"
+                android:textSize="@dimen/sp_14"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:text="我的密码" />
+
+            <TextView
+                android:id="@+id/textView_myMessage_phone"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#666666"
+                android:text="******"
+                android:layout_height="@dimen/dp_30" />
+
+        </LinearLayout>
+
+        <View
+            android:background="#666666"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_height="@dimen/dp_1"/>
+    </LinearLayout>
+
+</LinearLayout>

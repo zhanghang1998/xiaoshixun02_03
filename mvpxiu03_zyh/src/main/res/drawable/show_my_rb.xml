@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 展示页面 , 底部栏按钮 我的-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@mipmap/common_tab_btn_my_s" android:state_checked="true"/>
+    <item android:drawable="@mipmap/common_tab_btn_my_n" android:state_checked="false"/>
+</selector>

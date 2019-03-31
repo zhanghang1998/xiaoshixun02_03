@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:paddingLeft="@dimen/dp_24"
+    android:paddingRight="@dimen/dp_24"
+    tools:context=".orderfragactivity.CommentAOrderctivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/eva_con"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_97"
+        android:layout_marginTop="@dimen/dp_70"
+        android:background="@drawable/homefrag_recyclerview_item"
+        android:padding="@dimen/dp_8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/eva_image"
+            android:layout_width="@dimen/dp_81"
+            android:layout_height="@dimen/dp_81"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/eva_text_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintLeft_toRightOf="@id/eva_image"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/eva_text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:text="123"
+            android:textColor="#ff0606"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/eva_image" />
+    </android.support.constraint.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/eva_text_content"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_97"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/fragment_order_fukuan_btu_cancel"
+        android:hint="请在此写下你对商品的评价"
+        android:padding="@dimen/dp_10"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eva_con" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/image_recy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_20"
+        app:layout_constraintBottom_toTopOf="@id/en_tongbu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eva_text_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <CheckBox
+        android:id="@+id/en_tongbu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:text="同步到圈子"
+        app:layout_constraintBottom_toTopOf="@id/eva_button_next"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/eva_button_next"
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:background="@drawable/fragment_order_fukuan_btu_go"
+        android:gravity="center"
+        android:src="@mipmap/common_btn_camera_blue_n"
+        android:text="发表"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

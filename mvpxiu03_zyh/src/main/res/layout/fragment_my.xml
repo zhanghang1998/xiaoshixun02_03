@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:padding="@dimen/dp_2">
+    <!-- 我的页面 -->
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/me_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:minHeight="@dimen/dp_150" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:background="@mipmap/beijing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/dp_140"
+                android:background="@drawable/fragment_my_background"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_50">
+
+                <TextView
+                    android:id="@+id/me_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_60"
+                    android:gravity="center"
+                    android:text="名字"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/sp_14" />
+
+                <RelativeLayout
+                    android:id="@+id/me_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:layout_marginTop="@dimen/dp_70"
+                    android:layout_marginRight="@dimen/dp_24">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_24"
+                        android:layout_height="@dimen/dp_24"
+                        android:layout_alignParentLeft="true"
+                        android:src="@mipmap/my_icon_information_n" />
+
+                    <TextView
+                        android:id="@+id/text_frag05_myMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/dp_44"
+                        android:layout_marginTop="@dimen/dp_2"
+                        android:text="个人资料"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/sp_14" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/dp_44"
+                        android:background="#ededed" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/me_circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:layout_marginRight="@dimen/dp_24">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_24"
+                        android:layout_height="@dimen/dp_24"
+                        android:layout_alignParentLeft="true"
+                        android:src="@mipmap/my_icon_circle_n" />
+
+                    <TextView
+                        android:id="@+id/text_frag05_myCircle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_44"
+                        android:text="我的圈子"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/sp_14" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/dp_44"
+                        android:background="#ededed" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/me_foot"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:layout_marginRight="@dimen/dp_24">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_24"
+                        android:layout_height="@dimen/dp_24"
+                        android:layout_alignParentLeft="true"
+                        android:src="@mipmap/my_icon_foot_n" />
+
+                    <TextView
+                        android:id="@+id/text_frag05_myFootprint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_44"
+                        android:text="我的足迹"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/sp_14" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/dp_44"
+                        android:background="#ededed" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/me_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:layout_marginRight="@dimen/dp_24">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_24"
+                        android:layout_height="@dimen/dp_24"
+                        android:layout_alignParentLeft="true"
+                        android:src="@mipmap/my_icon_wallet_n" />
+
+                    <TextView
+                        android:id="@+id/text_frag05_myWallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_44"
+                        android:text="我的钱包"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/sp_14" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/dp_44"
+                        android:background="#ededed" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/me_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:layout_marginRight="@dimen/dp_24">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_24"
+                        android:layout_height="@dimen/dp_24"
+                        android:layout_alignParentLeft="true"
+                        android:src="@mipmap/my_icon_address_n" />
+
+                    <TextView
+                        android:id="@+id/text_frag05_myAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_44"
+                        android:text="我的收货地址"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/sp_14" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/dp_44"
+                        android:background="#ededed" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/button_frag05_my_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_100"
+                    android:layout_marginRight="@dimen/dp_100"
+                    android:layout_marginTop="@dimen/dp_50"
+                    android:background="@drawable/fragment_my_bottn"
+                    android:text="退出登录"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/sp_16" />
+
+            </LinearLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/me_avatar"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_80"
+                android:layout_alignTop="@+id/line1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-40dp"
+                fresco:roundAsCircle="true" />
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

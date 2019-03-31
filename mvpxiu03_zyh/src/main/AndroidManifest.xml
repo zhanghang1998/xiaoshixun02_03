@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="zyh.com.activity">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="zyh.com.app.MyAppliction"
+        android:allowBackup="true"
+        android:icon="@drawable/youyaoqi"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/MyStyle">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ShowActivity" />
+        <activity android:name=".DescribeActivity" />
+        <activity android:name=".SearchGoodsActivity" />
+        <activity android:name=".GobuyActivity" />
+        <activity android:name=".myfragactivity.MyFootmarkActivity" />
+        <activity android:name=".myfragactivity.MyMassageActivity" />
+        <activity android:name=".myfragactivity.MyShopAddressActivity" />
+        <activity android:name=".myfragactivity.MyWalletActivity" />
+        <activity android:name=".myfragactivity.MyCircleActivity" />
+        <activity android:name=".myfragactivity.MyAddAddressActivity" />
+        <activity android:name=".orderfragactivity.PayOrderActivity" />
+        <activity android:name=".orderfragactivity.CommentAOrderctivity"></activity>
+    </application>
+
+</manifest>
